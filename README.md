@@ -261,7 +261,7 @@ These analyses are separate from deepfake classification and are intended to det
 
 ## Model architecture
 
-![model_architecture](assets/architecture.jpg)
+![model_architecture](./assets/architecture.jpg)
 
 The main classifier is implemented in `src/model.py` as a two-input Keras model:
 
