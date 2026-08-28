@@ -1,4 +1,4 @@
-# rPPG-based deepfake detection
+# rPPG-based Deepfake Detection
 
 This repository contains the code for the article **“Do deepfakes have a heartbeat? Detecting deepfake videos using remote photoplethysmography”**, published in *Forensic Science International: Reports* (2026).
 
@@ -10,7 +10,7 @@ This repository implements an end-to-end pipeline for investigating whether remo
 We evaluated the method on both manipulated face videos and fully AI-generated videos. Importantly, the method should not be interpreted as a simple “heartbeat present = real, heartbeat absent = fake” test: extracted rPPG signals can contain genuine heart-rate information, while their reliability and discriminative value depend on the video content and acquisition conditions.
 
 > **Research-use notice**  
-> This repository contains experimental research software. It is intended to support reproducibility and further research, not to provide a stand-alone forensic decision system. Results should be interpreted in the context of the experimental protocol and the limitations described in the paper.
+> This repository contains experimental research software. It is intended to support reproducibility and further research, not to provide a stand-alone forensic decision system.
 
 ## Repository structure
 
