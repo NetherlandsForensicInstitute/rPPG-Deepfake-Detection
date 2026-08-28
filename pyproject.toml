@@ -1,0 +1,36 @@
+[project]
+name = "rppg-paper"
+version = "0.1.0"
+description = "Deepfake detection via remote photoplethysmography (rPPG): signal extraction, LSTM/baseline training, and evaluation."
+requires-python = "==3.10.*"
+dependencies = [
+    "tensorflow==2.15.0",
+    "keras==2.15.0",
+    "keras-tuner>=1.4.0",
+    "numpy==1.26.4",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "scipy>=1.11.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "opencv-python>=4.8.0",
+    "Pillow>=10.0.0",
+    "tqdm>=4.65.0",
+    "h5py>=3.9.0",
+    "protobuf>=4.25.3,<5",
+    # Ground-truth sensor parsing
+    "biosppy>=2.2.0",
+    "peakutils>=1.3.5",
+    # Optional: additional analysis
+    "autorank>=1.3.0",
+    "scikit-posthocs>=0.7.0",
+    "plotly>=5.0.0",
+    "huggingface-hub>=0.24.0",
+]
+
+# This project is a collection of scripts run from the repo root (not an
+# installable library), and its GPU stack (cudatoolkit/cupy/cusignal/pyVHR)
+# has to be assembled manually outside of pdm — see README.md. So it's not
+# packaged/built; pdm only manages the pip-installable dependencies above.
+[tool.pdm]
+distribution = false

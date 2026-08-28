@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Claude
+.claude
+
+# Type checker / linter caches
+.mypy_cache/
+.ruff_cache/
+
+# Trained models
+*.keras
+*.h5
+*.pb
+
+# Output files produced by the scripts
+predicted_labels.csv
+training_metrics.npz
+*.jpg
+*.svg
+*.png
+tuning_results/
+extracted_signals/
+signal_plots/
+
+# Data (never commit datasets or ground-truth files)
+*.json
+*.csv
+*.txt
+# Re-include version-controlled text files
+!requirements.txt
+!src/datasets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+results_cv
+results_loo
