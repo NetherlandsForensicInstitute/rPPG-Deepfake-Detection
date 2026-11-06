@@ -3,7 +3,7 @@
 This repository contains the code for the article **“Do deepfakes have a heartbeat? Detecting deepfake videos using remote photoplethysmography”**, published in *Forensic Science International: Reports* (2026).
 
 **Paper:** https://doi.org/10.1016/j.fsir.2026.100509  
-**Dataset:** https://huggingface.co/datasets/NetherlandsForensicInstitute/rppg-deepfake-detection
+**Dataset:** https://huggingface.co/datasets/NetherlandsForensicInstitute/synthetic-portrait-videos
 
 This repository implements an end-to-end pipeline for investigating whether remote photoplethysmography (rPPG) signals extracted from portrait videos can be used for deepfake detection. rPPG estimates blood-volume-pulse (BVP) signals from subtle, temporally varying skin-color changes. The repository contains code for signal extraction, preprocessing, model training and evaluation, generalization experiments, baseline comparisons, and validation of extracted heart-rate signals against reference measurements.
 
@@ -348,17 +348,15 @@ If you use this repository or the accompanying dataset in academic work, please 
 > https://doi.org/10.1016/j.fsir.2026.100509
 
 ```bibtex
-@article{rppg_deepfake_detection_2026,
-title = {Do deepfakes have a heartbeat? Detecting deepfake videos using remote photoplethysmography},
-journal = {Forensic Science International: Reports},
-volume = {14},
-pages = {100509},
-year = {2026},
-issn = {2665-9107},
-doi = {https://doi.org/10.1016/j.fsir.2026.100509},
-url = {https://www.sciencedirect.com/science/article/pii/S2665910726000617},
-author = {Stijn {van Lierop} and Sanne {de Wit} and Paula Pronk and Zeno Geradts},
-keywords = {Deepfake detection, AI-generated video, Remote photoplethysmography, Forensic video analysis, Explainable AI},
-abstract = {With the rapid advancements in generative video models it has become possible to manipulate and generate hyperrealistic videos. So-called deepfakes can be used to facilitate crimes and falsify evidence, thereby undermining public trust in the justice system. This necessitates the development of reliable methods for the authentication of digital media in forensic practice. Among the many strategies explored in the literature, remote photoplethysmography (rPPG)-based detection methods represent a promising direction. These methods assess authenticity based on blood volume pulse signals estimated from a video and have demonstrated robust performance based on physiologically interpretable features. However, it remains unclear whether rPPG signals utilized by detection methods actually correspond to the real-life heart rate. In this study, we introduce a simple approach that detects deepfakes by analyzing rPPG signals obtained from portrait videos, and we investigate whether these signals truly reflect heart rate through a series of ground-truth experiments. Furthermore, where existing methods focused on faceswap videos only, we extend our evaluation to also include fully AI-generated videos created by state-of-the-art, commercial text-to-video models. Results demonstrate that rPPG signals can be informative for detecting both faceswap as well as fully AI-generated videos. We find that ground-truth heart rate can be estimated from rPPG signals, although the accuracy of these estimates varies substantially with dataset characteristics and acquisition conditions, such as environmental lighting and camera specifications. Future work should therefore investigate the reliability of rPPG analysis on a large forensically relevant ground-truth dataset to assess its applicability in a variety of challenging case conditions.}
+@article{vanlierop2026heartbeat,
+  author    = {van Lierop, Stijn and de Wit, Sanne and Pronk, Paula and Geradts, Zeno},
+  title     = {Do deepfakes have a heartbeat? Detecting deepfake videos using remote photoplethysmography},
+  journal   = {Forensic Science International: Reports},
+  volume    = {14},
+  pages     = {100509},
+  year      = {2026},
+  issn      = {2665-9107},
+  doi       = {10.1016/j.fsir.2026.100509},
+  url       = {https://doi.org/10.1016/j.fsir.2026.100509}
 }
 ```
